@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #eaf2ff;
+      padding: 50px 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 350px;
+      margin: auto;
+    }
+
+    button {
+      background: #1769ff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome!</h1>
+    <p id="message">This is my first website.</p>
+    <button onclick="changeMessage()">Click Me</button>
+  </div>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText =
+        "My website is working!";
+    }
+  </script>
+</body>
+</html>
